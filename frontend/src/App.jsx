@@ -1,17 +1,18 @@
-import { Heading } from './components/Heading'
-import {Aim} from './components/Aim'
-import {Background} from './components/Background'
+import { Home } from './components/Home'
+import { About } from './components/About'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 function App() {
 
 
   return (
     <>
-      <div className='h-screen overflow-y-auto bg-black'>
-      <Heading></Heading>
-      <Background></Background>
-      <Aim></Aim>
-      </div>
-  
+     <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home></Home>}></Route>
+          <Route path='/About' element={<About></About>}></Route>
+          <Route></Route>
+        </Routes>
+     </BrowserRouter>
 
     </>
   )
