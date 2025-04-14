@@ -7,7 +7,7 @@ export const Home = () => {
     const renderSlider = () => {
         return (
             <>
-                <div className="h-[calc(100vh-6rem)] overflow-y-auto bg-slate-400 w-1/2 rounded-md fixed top- left-0 z-50 flex flex-col gap-y-3 font-playfair items-center p-2">
+                <div className="h-[calc(100vh-6rem)] overflow-y-auto bg-slate-400 w-1/2 rounded-md fixed left-0 z-50 flex flex-col gap-y-3 font-playfair items-center p-2">
                     
                         <Link to='/About'>About</Link>
                         <div>Contact Us</div>
